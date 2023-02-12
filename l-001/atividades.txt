@@ -1,0 +1,52 @@
+Lista 001 - 14/02/2023
+
+https://www.dropbox.com/s/1fleni9rb02fnm9/Lista%20de%20Exerc%C3%ADcios%20I%20Python%20para%20Zumbis.pdf?dl=0
+
+- ex001:
+
+n1=float(input("n1:"))
+n2=float(input("n2:"))
+print(n1+n2)
+
+- ex002:
+
+metro=int(input("metros:"))
+milimetro=metro*1000
+print(metro,"metros, em milimetros fica:",milimetro,"milimetros")
+
+- ex003:
+
+dias=int(input("dias:"))
+horas=int(input("horas:"))
+minutos=int(input("minutos:"))
+segundos=int(input("segundos:"))
+
+horas+=dias*24
+minutos+=horas*60
+segundos+=minutos*60
+
+print(segundos)
+
+- ex004:
+
+salario=float(input("salario:"))
+porcentagem=int(input("porcentagem:"))
+print(salario+(salario*porcentagem/100))
+
+- ex005:
+
+mercadoria=float(input("mercadoria:"))
+desconto=int(input("desconto:"))
+print(mercadoria-(mercadoria*desconto/100))
+
+- ex006:
+
+- ex007:
+
+- ex008:
+
+- ex009:
+
+- ex010:
+
+- ex011:
