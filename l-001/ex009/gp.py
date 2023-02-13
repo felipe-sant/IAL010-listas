@@ -3,6 +3,11 @@ print("Escreva um programa que pergunte a quantidade de km percorridos por um ca
 
 #Programa:
 
+km=int(input("km:"))
+dias=int(input("dias:"))
+preco=(km*0.15)+(dias*60.0)
+print("R$",preco)
+
 #Fim do Programa.
 
 print("\n--- Fim do Programa ---\n")

@@ -3,6 +3,9 @@ print("Sabendo que str() converte valores numéricos para string, calcule quanto
 
 #Programa:
 
+num=str(2**1000000)
+print(len(num))
+
 #Fim do Programa.
 
 print("\n--- Fim do Programa ---\n")
