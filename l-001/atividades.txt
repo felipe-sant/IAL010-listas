@@ -62,6 +62,7 @@ print(celsius)
 
 km=int(input("km:"))
 dias=int(input("dias:"))
+preco=(km*0.15)+(dias*60.0)
 print("R$",preco)
 
 - ex010:
