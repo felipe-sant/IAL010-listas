@@ -41,12 +41,38 @@ print(mercadoria-(mercadoria*desconto/100))
 
 - ex006:
 
+distancia=int(input("distancia:"))
+velocidade_media=int(input("velocidade média:"))
+tempo=distancia/velocidade_media
+print(tempo)
+
 - ex007:
+
+celsius=int(input("celcius:"))
+fahrenheit=9*celsius/5+32
+print(fahrenheit)
 
 - ex008:
 
+fahrenheit=int(input("fahrenheit:"))
+celsius=(fahrenheit-32)*5/9
+print(celsius)
+
 - ex009:
+
+km=int(input("km:"))
+dias=int(input("dias:"))
+print("R$",preco)
 
 - ex010:
 
+cigarros_por_dia=int(input("cigarros pro dia:"))
+anos=int(input("anos:"))
+qnt_cigarros=(anos*365)*cigarros_por_dia
+dias_perdidos=(qnt_cigarros*10)/1440
+print(dias_perdidos,"dias")
+
 - ex011:
+
+num=str(2**1000000)
+print(len(num))
