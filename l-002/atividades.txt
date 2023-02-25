@@ -4,14 +4,108 @@ https://www.dropbox.com/sh/m9wio7ock77yowd/AAAR3ogXRJqhd5Uw3NthvS0Ia?dl=0&previe
 
 - ex001:
 
+n1=int(input("Lado 1: "))
+n2=int(input("Lado 2: "))
+n3=int(input("Lado 3: "))
+if n1==n2 and n2==n3:
+    print("\nEquilatero")
+elif n1==n2 or n2==n3 or n1==n3:
+    print("\nIsóseles")
+else:
+    print("\nEscaleno")
+
 - ex002:
+
+from calendar import isleap
+ano = int(input("ano: "))
+if isleap(ano):
+    print("bissexto!")
+else:
+    print("não é bissexto")
 
 - ex003:
 
+peso=float(input("peso do peixe: "))
+if peso > 50:
+    valor=(peso-50)*4
+    print("\nO peso excedeu o limite estabelecido, logo você recebera uma multa!")
+else:
+    valor=0
+    print("\nO peso esta dentro dos conformes estabelecido pelo regulamento de normas de São Paulo.")
+print(f"valor da multa: R$ {valor}")
+
 - ex004:
+
+n1=int(input("Número 01: "))
+n2=int(input("Número 02: "))
+n3=int(input("Número 03: "))
+if n2<n1>n3:
+    print(f"O número maior é o n1: {n1}")
+elif n1<n2>n3:
+    print(f"O número maior é o n2: {n2}")
+elif n1<n3>n2:
+    print(f"O número maior é o n3: {n3}")
+else:
+    print("Os números são iguais!")
 
 - ex005:
 
+n1=int(input("n1: "))
+n2=int(input("n2: "))
+n3=int(input("n3: "))
+if n2<n1>n3:
+    print(f"O número maior é o n1: {n1}")
+    if n2>n3:
+        print(f"O número menor é o n3: {n3}")
+    elif n2<n3:
+        print(f"O número menor é o n2: {n2}")
+    else:
+        print(f"O n2 e n3 são iguais e os menores números: {n2}")
+elif n1<n2>n3:
+    print(f"O número maior é o n2: {n2}")
+    if n1>n3:
+        print(f"O número menor é o n3: {n3}")
+    elif n1<n3:
+        print(f"O número menor é o n1: {n1}")
+    else:
+        print(f"O n1 e n3 são iguais e os menores números: {n1}")
+elif n1<n3>n2:
+    print(f"O número maior é o n3: {n3}")
+    if n1>n2:
+        print(f"O número menor é o n2: {n2}")
+    elif n1<n2:
+        print(f"O número menor é o n1: {n1}")
+    else:
+        print(f"O n1 e n2 são iguais e os menores números: {n1}")
+else:
+    print("Os números são iguais!")
+
 - ex006:
 
+dinheiro_p_hora=float(input("Quanto você ganha por hora: "))
+horas_trabalhadas=int(input("Horas trabalhadas no mês: "))
+salario_bruto=dinheiro_p_hora*horas_trabalhadas
+imposto_de_renda=salario_bruto*0.11
+inss=salario_bruto*0.08
+sindicato=salario_bruto*0.05
+salario_liquido=salario_bruto-imposto_de_renda-inss-sindicato
+print(f"Seu salário bruto foi de R$ {salario_bruto};")
+print(f"por conta no imposto de renda de 11%, foi descontado R$ {imposto_de_renda}")
+print(f"por conta do inss de 8%, foi descontado R$ {inss}")
+print(f"por conta do sindicato de 5%, foi descontado R$ {sindicato}")
+print(f"Seu salário final ficou de R$ {salario_liquido}")
+
 - ex007:
+
+#estou levando em conta que eu terei que comprar um balde de tinta inteiro caso falte.
+metros=int(input("metros quadrados a serem pintados: ")) 
+if metros > 0:
+    tinta=1
+    if metros > 54:
+        while metros > 54:
+            metros -= 54
+            tinta += 1
+    print(f"Você vai precisar de {tinta} baldes")
+    print(f"Tendo que pagar R$ {tinta*80}")
+else:
+    print("Seus metros quadrados são igual ou menor que zero!")
