@@ -1,2 +1,2 @@
-# IAL010-listas
-Algoritmo e Lógica de Programação
+# Algoritmo e Lógica de Programação
+Listas de exercícos desenvolvidos como tarefas
