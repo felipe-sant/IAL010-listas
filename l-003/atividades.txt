@@ -4,11 +4,50 @@ https://www.dropbox.com/sh/m9wio7ock77yowd/AADNdscjYjbEKnMhemDzJCkDa/Lista%20de%
 
 - ex001:
 
+n1=-1
+while n1>10 or n1<0:
+    n1=int(input("Coloque uma nota:"))
+print("Nota Aceita.")
+
 - ex002:
+
+nome=str(input("Nome de Úsuario: "))
+senha=str(input("Senha: "))
+while senha != nome:
+    senha=str(input("Senha: "))
 
 - ex003:
 
+a=int(80000)
+b=int(200000)
+ano=0
+while a<b:
+    a=a+(a*0.03)
+    b=b+(b*0.015)
+    ano+=1
+print(f"O número de anos necessarios para a Cidade A ultrapassar a Cidade B é de {ano}")
+
 - ex004:
 
+if numero==1 or numero==2:
+    print("1")
+else:
+    x=3
+    while x<=numero:
+        f3=f1+f2
+        f1,f2 = f2,f3
+        x+=1
+    print(f3)
+
 - ex005:
+
+n1 = int(input("Digite um valor: "))
+n2 = int(input("Digite outro valor: "))
+if n1 < n2:
+    n1,n2 =  n2,n1
+resto = n1 % n2
+while resto != 0:
+    n1,n2 = n2,resto
+    resto = n1 % n2
+print(n2)
 
